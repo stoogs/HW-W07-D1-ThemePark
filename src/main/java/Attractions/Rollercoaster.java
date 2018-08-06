@@ -1,9 +1,13 @@
 package Attractions;
 
-public class Rollercoaster extends Attraction{
-    public Rollercoaster(int rating) {
-        super(rating);
-    }
-    Rollercoaster r1 = new Rollercoaster(5);
+public class Rollercoaster extends Attraction
+implements ITicketed{
 
+    public Rollercoaster(String name, int rating) {
+        super(name, rating);
+    }
+
+    public void defaultPrice(int guestmoney){
+       guestmoney -= 50;
+    }
 }

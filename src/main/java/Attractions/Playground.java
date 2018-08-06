@@ -1,7 +1,8 @@
 package Attractions;
 
 public class Playground extends Attraction {
-    public Playground(int rating) {
-        super(rating);
+    public Playground(String name, int rating) {
+        super(name, rating);
     }
+
 }
